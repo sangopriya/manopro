@@ -1,0 +1,112 @@
+@import url('../assets/stylesheets/common.scss');
+.overall_conatiner_signin{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/images/signin\ .png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .inner_container_signin{
+        height: 100%;
+        width: 100%;
+        background-color: #9acef8a6;
+        position: absolute;
+        .login_container{
+            height: 400px;
+            width: 30%;
+            border: solid 1.5px black;
+            border-radius: 30px;
+            margin: 10% 60%;
+            background-color: #ffff;
+            
+
+            .head{
+                height: 30px;
+                width: 100%;
+                margin-top: 2%;
+              //  border: solid 2px red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    text-transform: capitalize;
+                    font-size: 2rem;
+                    color: #242424;
+                }
+            }
+            .form_body{
+                height: 300px;
+                width: 100%;
+              //  border:solid 2px red;
+                margin: 8% 0 0 0;
+               
+                .form_row{
+                    height: 50px;
+                    width: 70%;
+                    border: solid 2px #242424;
+                    margin: 0 0 7% 15%;
+                    display: flex;
+                    border-radius: 10px;
+                    .txtboxes{
+                        height: 100%;
+                        width: 85%;
+                        border: none;
+                        outline: none;
+                        font-size: 18px;
+                       // border-radius: 10px;
+                        margin-left: 5%;
+                       // padding-top: 3%;
+                       // background-color: transparent;
+
+                    }
+                    .iconalign{
+                        height: 100%;
+                        width: 10%;
+                      //  border: solid 2px black;
+                        font-size: 1.5rem;
+                        color: #2424;
+                        padding-top: 5%;
+                    }
+                }
+                
+                .btnbody{
+                    height: 50px;
+                    width: 30%;
+                    border: solid 2px black;
+                    margin: 5% 0 0 15%;
+                    border-radius: 15px;
+                    .btn{
+                        height: 100%;
+                        width: 100%;
+                        font-size: 18px;
+                        color: #242424;
+                        font-weight: 300;
+                        background: none;
+                        border: none;
+                        outline: none;
+                        border-radius: 15px;
+                    }
+                }
+                .btn:hover{
+                    background-color: #242424;
+                    color: #ffff;
+                }
+                .registerlink{
+                    height: 30px;
+                    width: 50%;
+                   // border: solid 2px red;
+                    float: right;
+                    margin: 5% 3% 0 0;
+                    p{
+                        font-size: 18px;
+                        color: blue;
+                        text-decoration: underline;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
