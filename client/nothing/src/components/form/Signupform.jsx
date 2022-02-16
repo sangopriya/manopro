@@ -12,14 +12,26 @@ function Signupform() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
-  const registerSubmit =()=>{
-    axios.post("https://crud-operation-auth.herokuapp.com/auth/signup" ,{
+  const registerSubmit =(e)=>{
+    axios.post( "http://localhost:3000/auth/signup" ,{
       username:username,email:email,password:password
     })
-    .then(()=>{
-      console.log("sucessfully stored")
+    .then((response)=>{
+      alert("sucessfully stored")
     });
   };
+  // const registerSubmit =async(e)=>{
+  //   try {
+  //     const info = await axios.post(""http://crud-operation-auth.herokuapp.com/auth/signup"",{
+  //       username:username,email:email,password:password
+  //     })
+  //     // if (!info) return res.status(400).json({msg:"error"})
+  //     alert("Saved Succesfully",info)
+     
+  //   } catch (error) {
+  //     console.log("error",error)
+  //   }
+  // };
  
 
   return (

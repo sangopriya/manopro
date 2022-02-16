@@ -20,7 +20,7 @@ app.use(cors())
 
 //connect to server port
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT 
 
 app.listen(PORT , ()=>{
     console.log(`Server is running on your port ${PORT}`);
